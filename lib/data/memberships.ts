@@ -1,0 +1,70 @@
+import type { Membership } from "@/types";
+
+export const memberships: Membership[] = [
+  {
+    id: "gold",
+    name: "NRG GOLD",
+    slug: "nrg-gold",
+    price: 39.95,
+    priceLabel: "€39,95 / 4 weken",
+    studentDiscount: 10,
+    features: [
+      "Fitness toegang",
+      "Hypermoderne toestellen",
+      "Functional zone",
+      "Lounge toegang",
+      "Sauna",
+      "7/7 toegang",
+      "Multiclub Lifestyle",
+    ],
+    cta: {
+      primary: "Word lid",
+      secondary: "Meer informatie",
+    },
+  },
+  {
+    id: "premium",
+    name: "NRG PREMIUM",
+    slug: "nrg-premium",
+    price: 49.95,
+    priceLabel: "€49,95 / 4 weken",
+    studentDiscount: 10,
+    featured: true,
+    badge: "MEEST GEKOZEN",
+    features: [
+      "Alle voordelen van NRG Gold",
+      "Groepslessen met lesgever",
+      "Indoor cycling (spinning)",
+      "Persoonlijke coaching",
+      "Inclusief refreshing drinks",
+      "Voortgangsmetingen",
+      "Member events",
+    ],
+    cta: {
+      primary: "Word lid",
+      secondary: "Meer informatie",
+    },
+  },
+  {
+    id: "vip",
+    name: "NRG VIP",
+    slug: "nrg-vip",
+    price: 59.95,
+    priceLabel: "€59,95 / 4 weken",
+    studentDiscount: 10,
+    features: [
+      "Alle voordelen van NRG Premium",
+      "Inclusief shake",
+      "Inclusief koffie/thee",
+      "Persoonlijk beweegadvies",
+      "Handdoekenservice",
+      "Priority support",
+      "Gratis member events",
+      "Exclusieve workshops",
+    ],
+    cta: {
+      primary: "Word lid",
+      secondary: "Meer informatie",
+    },
+  },
+];

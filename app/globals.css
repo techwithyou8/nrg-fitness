@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: "Inter", system-ui, sans-serif;
+  --font-inter-tight: "Inter Tight", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-neutral-50 text-dark antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display font-semibold text-dark;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center rounded-xl px-6 py-3.5 font-semibold transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary text-dark hover:bg-primary-dark hover:shadow-glow focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply btn bg-dark text-white hover:bg-dark-light focus:ring-2 focus:ring-dark focus:ring-offset-2;
+  }
+
+  .btn-outline {
+    @apply btn border-2 border-dark text-dark hover:bg-dark hover:text-white focus:ring-2 focus:ring-dark focus:ring-offset-2;
+  }
+
+  .card {
+    @apply rounded-2xl bg-white p-6 shadow-soft transition-shadow hover:shadow-lg;
+  }
+
+  .input {
+    @apply w-full rounded-xl border-2 border-neutral-200 bg-white px-4 py-3 text-dark placeholder:text-neutral-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 disabled:bg-neutral-100 disabled:cursor-not-allowed;
+  }
+
+  .badge {
+    @apply inline-flex items-center rounded-full px-3 py-1 text-sm font-medium;
+  }
+
+  .badge-primary {
+    @apply badge bg-primary/10 text-primary-dark;
+  }
+
+  .badge-secondary {
+    @apply badge bg-secondary/10 text-secondary-dark;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-radial {
+    background: radial-gradient(circle at 30% 20%, rgba(181, 255, 59, 0.15) 0%, transparent 50%);
+  }
+
+  .blur-vignette {
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Hero text shadow voor betere leesbaarheid */
+  .text-shadow-strong {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8), 0 4px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .text-shadow-soft {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Responsive text sizing helpers */
+  .text-responsive-xl {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  .text-responsive-2xl {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
+  }
+}

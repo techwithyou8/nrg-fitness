@@ -1,0 +1,25 @@
+{
+  "name": "NRG Fitness Terneuzen & Hulst",
+  "short_name": "NRG Fitness",
+  "description": "All-inclusive familie fitness met persoonlijke begeleiding en premium faciliteiten",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1C1F22",
+  "theme_color": "#B5FF3B",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "294x100",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo-large.png",
+      "sizes": "588x200",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["health", "fitness", "lifestyle"],
+  "lang": "nl-NL",
+  "dir": "ltr"
+}
